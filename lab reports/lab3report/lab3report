@@ -75,17 +75,17 @@ Create a BitBucket account and import the course GitHub repository using the Bit
 \item[git clone]
 The Clone command clones repository to user's local storage.
 \item[git push]
-Push publishes data to the remote repository.
+The Push command sends committs from local repo to remote repo.
 \item[git pull]
-Pull updates local repository with the master remote repository.
+The Pull Command updates local repository with the master remote repository.
 \item[git add]
-Add tells git that you want to include updates to a file in the next commit.
+The Add Command marks changes that have been made to the list to 'commit'.
 \item[git commit]
 Commit is used to save changes to the local repository.
 \item[local repository]
 Local repository is the repository stored on the user's local storage and is used for modifying code to be published.
 \item[remote repository]
-Remote repository is the repository used for publishing code.
+Remote repository is the repository stored on a server or online host like github
 \item[branching]
 Branching is used to point to specific commit changes. 
 \item[touch]
