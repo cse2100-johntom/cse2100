@@ -1,0 +1,123 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CSE 2100 Laboratory Report
+% LaTeX Template
+%
+% This template is a modified version of the original downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% Modified by cmcmurrough
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
+\usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
+\usepackage{graphicx} % Required for the inclusion of images
+\usepackage{natbib} % Required to change bibliography style to APA
+\usepackage{amsmath} % Required for some math elements 
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
+
+%\usepackage{times} % Uncomment to use the Times New Roman font
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{Lab 3: Git Version Control \\ CSE 2100-001} % Title and course section
+
+\author{John Jones & Thomas Vu} % Author name
+
+\date{\today} % Report submission date
+
+\begin{document}
+
+\maketitle % Insert the title, author and date
+
+\begin{center}
+\begin{tabular}{l r}
+Date Performed: & February 13, 2020 \\ % Date of the original lab session
+Partners: & John Jones \\ % Partner names
+& Thomas Vu \\
+\end{tabular}
+\end{center}
+
+% If you wish to include an abstract, uncomment the lines below
+% \begin{abstract}
+% Abstract text
+% \end{abstract}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+
+\section{Objective}
+
+Create a BitBucket account and import the course GitHub repository using the BitBucket web interface. Once you have the repository imported into BitBucket, clone it onto your Pi using the \textit{git clone} command. Finally, modify the \textit{hello world} program so that it instead prints "Hello UTA", and push the result to your BitBucket account. Demonstrate your work by running the modified program and displaying the source code on the BitBucket web interface.
+
+\subsection{Definitions}
+\label{definitions}
+\begin{description}
+\item[git clone]
+The Clone command clones repository to user's local storage.
+\item[git push]
+Push publishes data to the remote repository.
+\item[git pull]
+Pull updates local repository with the master remote repository.
+\item[git add]
+Add tells git that you want to include updates to a file in the next commit.
+\item[git commit]
+Commit is used to save changes to the local repository.
+\item[local repository]
+Local repository is the repository stored on the user's local storage and is used for modifying code to be published.
+\item[remote repository]
+Remote repository is the repository used for publishing code.
+\item[branching]
+Branching is used to point to specific commit changes. 
+\item[touch]
+Touch is used to create new, empty files. It can also be used to change timestamps on existing files and directories. 
+\item[nano]
+Nano is a fast and very user-friendly command line text editor for Linux.
+\end{description} 
+ 
+%----------------------------------------------------------------------------------------
+%	SECTION 2
+%----------------------------------------------------------------------------------------
+
+\section{Question 1}
+\textbf{What is the difference between a local repository and remote repository when using Git?}\\ 
+
+Local repository is for modifying code and remote repository is for publishing code.
+%----------------------------------------------------------------------------------------
+%	SECTION 3
+%----------------------------------------------------------------------------------------
+
+\section{Question 2}
+\textbf{What is the main drawback to using GitHub vs BitBucket to host your own personal projects?}\\
+
+The main drawback is that GitHub is more focused around public code and BitBucket is more focused around private code.
+
+%----------------------------------------------------------------------------------------
+%	SECTION 4
+%----------------------------------------------------------------------------------------
+
+\section{Question 3}
+\textbf{Name three basic text editors that operate solely via the Linux terminal}\\
+
+Three basic text editors that operate only using the Linux 	terminal are nano, Vim, and GNU Emacs.
+
+\end{document}
