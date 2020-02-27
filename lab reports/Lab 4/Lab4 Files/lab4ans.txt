@@ -1,0 +1,10 @@
+1. Group
+2. Drag a cube primitive and set it to hollow. Drag a ruler and set it to inches. Type in the thickness to 0.5 inch.
+
+CAD - computer aided design software is used to assist a user to create engineering, architectural, and scientific designs
+
+AutoCAD - Popular but expensive software used for 2D and 3D CAD.
+
+.STL - Extension that is supported by most 3D printing platforms.
+
+.OBJ - Format used by tinkercad that also stores textures for 3D surfaces that can be imported or exported.
