@@ -1,0 +1,16 @@
+
+//used to install tree (type tree to seee the tree after install)
+sudo apt-get tree 
+
+////Video 2////
+XML for glade must be in same folder as exe file that is created using make
+
+//install glade (will install gtk)
+sudo apt-get install glade 
+
+//start up (& means run in bg)
+glade &
+
+////Run pkg-config and show whichs libraries need to be included to run
+pkg config --libs gtk+-3.0
+
