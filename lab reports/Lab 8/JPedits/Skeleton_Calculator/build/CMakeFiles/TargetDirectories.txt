@@ -1,0 +1,3 @@
+/home/pi/Desktop/lab8Glade/Finaledits/Skeleton_Calculator/build/CMakeFiles/rebuild_cache.dir
+/home/pi/Desktop/lab8Glade/Finaledits/Skeleton_Calculator/build/CMakeFiles/edit_cache.dir
+/home/pi/Desktop/lab8Glade/Finaledits/Skeleton_Calculator/build/CMakeFiles/Calculator.dir
