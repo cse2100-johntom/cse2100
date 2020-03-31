@@ -1,6 +1,8 @@
 
 //Install tree (type tree to see the tree structure after install)
-sudo apt-get tree 
+sudo apt-get tree
+
+sudo apt-get install glade --fix-missing  
 
 ////Video 2////
 XML for glade must be in same folder as exe file that is created using make
