@@ -21,7 +21,11 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass{article}
-
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+  \lstdefinestyle{ascii-tree}{
+    literate={├}{|}1 {─}{--}1 {└}{+}1 
+  }
 \usepackage{graphicx} % Required for the inclusion of images
 \usepackage{natbib} % Required to change bibliography style to APA
 \usepackage{amsmath} % Required for some math elements 
@@ -85,8 +89,10 @@ Software that determines what libraries are needed for a particular program to r
 \item[The two parameters of pkg\_check\_modules in CMakeLists.txt:]
 PREFIX and Flags.
 \item[tree:]
-\begin{verbatim}
-.
+\begin{frame}
+
+\begin{lstlisting}[style=ascii-tree]
+
 ├── build
 ├── CMakeLists.txt
 ├── include
@@ -95,7 +101,9 @@ PREFIX and Flags.
     ├── calculator.glade
     ├── global.cpp
     └── main.cpp
-\end{verbatim}
+\end{lstlisting}
+\end{frame}
+
 \item[]
 \end{description} 
 
@@ -105,7 +113,7 @@ PREFIX and Flags.
 \section{Question-set 1 -- CMake}
 \textbf{Let us consider adding an object to our project (we use cmake to create Makefiles). We have defined the object in my\_object.h and provide the implementation details (e.g., constructors, destructors, member functions) in my\_object.cpp. Where in the directory structure would you place these two files? }\\
 
-my_object.h goes into the include folder and my_object.cpp goes into the src folder. \\
+my\_object.h goes into the include folder and my\_object.cpp goes into the src folder. \\
 
 
 \textbf{Let us further assume that in the implementation of your new object you are using functions from a third party library called libmatrix. You know that the header you are including for this (matrix.h) is located in /usr/include/libmatrix/. Since this is a library the linker should also link libmatrix.a which is located in /usr/lib/libmatrix/. How would you need to modify the CMakeLists.txt file (include folders, library folders, linkables)?}\\
