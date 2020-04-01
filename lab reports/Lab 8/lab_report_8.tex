@@ -113,16 +113,16 @@ PREFIX and Flags.
 \section{Question-set 1 -- CMake}
 \textbf{Let us consider adding an object to our project (we use cmake to create Makefiles). We have defined the object in my\_object.h and provide the implementation details (e.g., constructors, destructors, member functions) in my\_object.cpp. Where in the directory structure would you place these two files? }\\
 
-my\_object.h goes into the include folder and my\_object.cpp goes into the src folder. \\
+my\_object.h goes into the include folder \\ my\_object.cpp goes into the src folder. \\
 
 
 \textbf{Let us further assume that in the implementation of your new object you are using functions from a third party library called libmatrix. You know that the header you are including for this (matrix.h) is located in /usr/include/libmatrix/. Since this is a library the linker should also link libmatrix.a which is located in /usr/lib/libmatrix/. How would you need to modify the CMakeLists.txt file (include folders, library folders, linkables)?}\\
 
-include directories(/usr/include/libmatrix/) and link directories(/usr/lib/libmatrix/)\\
+include directories(/usr/include/libmatrix/) \\ link directories(/usr/lib/libmatrix/)\\
 
 \textbf{Digging more into libmatrix, you find that it came with a pkg-config description. In this case, how would you need to modify the CMakeLists.txt file (include folders, library folders, linkables)?}\\
 
-target link libraries() and target include directories(). \\
+target link libraries() \\ target include directories(). \\
 
 %----------------------------------------------------------------------------------------
 %	SECTION 3
