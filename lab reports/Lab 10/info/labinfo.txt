@@ -1,0 +1,31 @@
+sudo apt-get install doxygen
+
+mkdir doc
+
+cd doc/
+
+doxygen -g
+
+emacs Doxyfile &
+
+////EDIT CONFIG FILE////
+
+EXTRACT_ALL            = YES
+
+INPUT                  = ../src ../include 
+
+FILE_PATTERNS          = *.cpp *.h
+
+GENERATE_LATEX         = NO
+
+GENERATE_HTML          = YES
+
+PROJECT_NAME           = "TeensyControl"
+
+////////////////////////
+
+////COMMENT SOURCE FILES////
+
+////Stay in doc directory////
+
+doxygen

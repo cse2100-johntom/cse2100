@@ -1,0 +1,125 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CSE 2100 Laboratory Report
+% LaTeX Template
+%
+% This template is a modified version of the original downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% Modified by cmcmurrough & Gergely Zaruba
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\usepackage{graphicx} % Required for the inclusion of images
+\usepackage{natbib} % Required to change bibliography style to APA
+\usepackage{amsmath} % Required for some math elements 
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
+
+%\usepackage{times} % Uncomment to use the Times New Roman font
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{Lab 10: Doxygen\\ CSE 2100-001} % Title and course section
+
+\author{Thomas Vu & John Jones} % Author name
+
+\date{\today} % Report submission date
+
+\begin{document}
+
+\maketitle % Insert the title, author and date
+
+\begin{center}
+\begin{tabular}{l r}
+Date Performed: & April 9, 2020 \\ % Date of the original lab session
+Partners: & Thomas Vu \\ % Partner names
+& John Jones \\
+\end{tabular}
+\end{center}
+
+% If you wish to include an abstract, uncomment the lines below
+% \begin{abstract}
+% Abstract text
+% \end{abstract}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+
+\section{Objective and Description}
+
+Watch the video posted on YouTube for Lab-10 (Doxygen). \\
+
+For this lab you will need to use the code that you have extended for the last Lab (Lab-9). In your main project directory, create a \textit{doc} directory (similarly to the video) and place your \textit{Doxyfile} and your documentation in this directory. 
+
+Your task description is simple: document the entire code (all four source and header files) to create a complete documentation for Lab 9's code. Do not be afraid to look up Doxygen documentation do-s and don't-s on the Internet.\\ 
+
+Once you think that you have provided sufficient documentation to the project, demonstrate your documentation to the TA.\\
+
+Create a \textit{.tgz} archive of your doc folder and turn it in together with the completed version of this document. 
+
+\subsection{Definitions and Quick Questions}
+\label{definitions}
+\begin{description}
+\item[Code Documentation:]
+A written document or text that describes how the software operates and/or how to use the software.
+\item[Commenting Code:]
+The act of creating an annotation in the source code describing attributes of specific lines of code for future reference.
+\item[Member function (C++):]
+A member function is a function that has its definition within the class and has access to all members of the class once an instance of the class has been created.
+\end{description} 
+
+%----------------------------------------------------------------------------------------
+%	SECTION 2
+%----------------------------------------------------------------------------------------
+\section{Question-1 -- Documentation vs. Commenting}
+\textbf{What is the difference between commenting code and code documentation?}\\
+
+Comments are located inside the body of the code and help you or someone else working directly with the code to understand specific details for particular sections of code. Documentation is usually located externally. This would contain a general overview of how the code works. \\
+
+%----------------------------------------------------------------------------------------
+%	SECTION 3
+%----------------------------------------------------------------------------------------
+\section{Question-set-2 -- Code Licenses}
+\textbf{What are the three most used open source software licenses (research)? }\\
+
+Replace this text with your response. \\
+
+\textbf{Describe the main difference between these three licenses (include your references).}
+
+Replace this text with your response. \\
+
+\textbf{Which one of these licenses would you prefer, and why?}
+
+Replace this text with your response. \\
+
+%----------------------------------------------------------------------------------------
+%	SECTION 4
+%----------------------------------------------------------------------------------------
+\section{Question-set-3 -- Subdirectories}
+\textbf{Let's assume that you have several subdirectories under your \textit{src} directory that contain source code. Look into the Doxyfile; what setting should you change for all those source files to be part of the documentation process?}\\
+
+Set RECURSIVE = YES \\
+
+\textbf{What can you do if you want all directories below \textit{src} included except for \textit{src/archive}?}\\
+
+Set EXCLUDE\_PATTERNS = */src/archive/* \\
+
+\end{document}
