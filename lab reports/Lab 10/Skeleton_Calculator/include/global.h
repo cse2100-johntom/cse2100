@@ -37,12 +37,12 @@ typedef struct
 
   GtkWidget *button_exit;  //!<the exit button
 
-} Gui_Window_AppWidgets; 
+} Gui_Window_AppWidgets;
 
 extern Gui_Window_AppWidgets *gui_app; //!<GUI App pointer
 
 extern int operand; //!<operand to be submitted to calculator
 extern int last_function; //!<function that determines what form of calculation to use
-extern int clear_f; //!<clears the last function?
+extern int clear_f; //!<determines whether an arithmetic operaation is being used
 
 #endif

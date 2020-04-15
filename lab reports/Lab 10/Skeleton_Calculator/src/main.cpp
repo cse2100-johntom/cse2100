@@ -7,7 +7,7 @@
  * \copyright GNU Public License
  * \mainpage The Calculator
  * \secion intro_sec Introduction
- * \This code was developed to torture students.
+ * This code was developed to torture students.
  * \section compile_sec Compilation
  * Enter your main dir and type Cmake to create your make file. Now go to your build dir and type make to create your make file.
  * \subsection Step1 Cmake
@@ -78,6 +78,12 @@ extern "C" void button_0_clicked(GtkWidget *p_wdgt, gpointer p_data )
   gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
 }
 
+/*!
+ * \brief defines what happens when button 1 gets clicked
+ * \param p_wdgt pointer to the builder structure
+ * \param p_data pointer to the builder data
+ * \details For this function to work, the widget class must have pointers for all widgets that we want to modify from the code.
+*/
 extern "C" void button_1_clicked(GtkWidget *p_wdgt, gpointer p_data )
 {
   const char *a_cc_value;
@@ -97,6 +103,12 @@ extern "C" void button_1_clicked(GtkWidget *p_wdgt, gpointer p_data )
   gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
 }
 
+/*!
+ * \brief defines what happens when button 2 gets clicked
+ * \param p_wdgt pointer to the builder structure
+ * \param p_data pointer to the builder data
+ * \details For this function to work, the widget class must have pointers for all widgets that we want to modify from the code.
+*/
 extern "C" void button_2_clicked(GtkWidget *p_wdgt, gpointer p_data )
 {
   const char *a_cc_value;
@@ -116,6 +128,12 @@ extern "C" void button_2_clicked(GtkWidget *p_wdgt, gpointer p_data )
   gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
 }
 
+/*!
+ * \brief defines what happens when button 3 gets clicked
+ * \param p_wdgt pointer to the builder structure
+ * \param p_data pointer to the builder data
+ * \details For this function to work, the widget class must have pointers for all widgets that we want to modify from the code.
+*/
 extern "C" void button_3_clicked(GtkWidget *p_wdgt, gpointer p_data )
 {
   const char *a_cc_value;
@@ -135,6 +153,12 @@ extern "C" void button_3_clicked(GtkWidget *p_wdgt, gpointer p_data )
   gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
 }
 
+/*!
+ * \brief defines what happens when button 4 gets clicked
+ * \param p_wdgt pointer to the builder structure
+ * \param p_data pointer to the builder data
+ * \details For this function to work, the widget class must have pointers for all widgets that we want to modify from the code.
+*/
 extern "C" void button_4_clicked(GtkWidget *p_wdgt, gpointer p_data )
 {
   const char *a_cc_value;
@@ -154,6 +178,12 @@ extern "C" void button_4_clicked(GtkWidget *p_wdgt, gpointer p_data )
   gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
 }
 
+/*!
+ * \brief defines what happens when button 5 gets clicked
+ * \param p_wdgt pointer to the builder structure
+ * \param p_data pointer to the builder data
+ * \details For this function to work, the widget class must have pointers for all widgets that we want to modify from the code.
+*/
 extern "C" void button_5_clicked(GtkWidget *p_wdgt, gpointer p_data )
 {
   const char *a_cc_value;
@@ -173,6 +203,12 @@ extern "C" void button_5_clicked(GtkWidget *p_wdgt, gpointer p_data )
   gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
 }
 
+/*!
+ * \brief defines what happens when button 6 gets clicked
+ * \param p_wdgt pointer to the builder structure
+ * \param p_data pointer to the builder data
+ * \details For this function to work, the widget class must have pointers for all widgets that we want to modify from the code.
+*/
 extern "C" void button_6_clicked(GtkWidget *p_wdgt, gpointer p_data )
 {
   const char *a_cc_value;
@@ -192,6 +228,12 @@ extern "C" void button_6_clicked(GtkWidget *p_wdgt, gpointer p_data )
   gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
 }
 
+/*!
+ * \brief defines what happens when button 7 gets clicked
+ * \param p_wdgt pointer to the builder structure
+ * \param p_data pointer to the builder data
+ * \details For this function to work, the widget class must have pointers for all widgets that we want to modify from the code.
+*/
 extern "C" void button_7_clicked(GtkWidget *p_wdgt, gpointer p_data )
 {
   const char *a_cc_value;
@@ -211,6 +253,12 @@ extern "C" void button_7_clicked(GtkWidget *p_wdgt, gpointer p_data )
   gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
 }
 
+/*!
+ * \brief defines what happens when button 8 gets clicked
+ * \param p_wdgt pointer to the builder structure
+ * \param p_data pointer to the builder data
+ * \details For this function to work, the widget class must have pointers for all widgets that we want to modify from the code.
+*/
 extern "C" void button_8_clicked(GtkWidget *p_wdgt, gpointer p_data )
 {
   const char *a_cc_value;
@@ -230,6 +278,12 @@ extern "C" void button_8_clicked(GtkWidget *p_wdgt, gpointer p_data )
   gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
 }
 
+/*!
+ * \brief defines what happens when button 9 gets clicked
+ * \param p_wdgt pointer to the builder structure
+ * \param p_data pointer to the builder data
+ * \details For this function to work, the widget class must have pointers for all widgets that we want to modify from the code.
+*/
 extern "C" void button_9_clicked(GtkWidget *p_wdgt, gpointer p_data )
 {
   const char *a_cc_value;
@@ -249,6 +303,12 @@ extern "C" void button_9_clicked(GtkWidget *p_wdgt, gpointer p_data )
   gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
 }
 
+/*!
+ * \brief defines what happens when plus button gets clicked
+ * \param p_wdgt pointer to the builder structure
+ * \param p_data pointer to the builder data
+ * \details For this function to work, the widget class must have pointers for all widgets that we want to modify from the code.
+*/
 extern "C" void button_pl_clicked(GtkWidget *p_wdgt, gpointer p_data )
 {
   const char *a_cc_value;
@@ -283,6 +343,12 @@ extern "C" void button_pl_clicked(GtkWidget *p_wdgt, gpointer p_data )
   gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
 }
 
+/*!
+ * \brief defines what happens when minus button gets clicked
+ * \param p_wdgt pointer to the builder structure
+ * \param p_data pointer to the builder data
+ * \details For this function to work, the widget class must have pointers for all widgets that we want to modify from the code.
+*/
 extern "C" void button_mi_clicked(GtkWidget *p_wdgt, gpointer p_data )
 {
   const char *a_cc_value;
@@ -317,6 +383,12 @@ extern "C" void button_mi_clicked(GtkWidget *p_wdgt, gpointer p_data )
   gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
 }
 
+/*!
+ * \brief defines what happens when multiply button gets clicked
+ * \param p_wdgt pointer to the builder structure
+ * \param p_data pointer to the builder data
+ * \details For this function to work, the widget class must have pointers for all widgets that we want to modify from the code.
+*/
 extern "C" void button_mu_clicked(GtkWidget *p_wdgt, gpointer p_data )
 {
   const char *a_cc_value;
@@ -351,6 +423,12 @@ extern "C" void button_mu_clicked(GtkWidget *p_wdgt, gpointer p_data )
   gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
 }
 
+/*!
+ * \brief defines what happens when divide button gets clicked
+ * \param p_wdgt pointer to the builder structure
+ * \param p_data pointer to the builder data
+ * \details For this function to work, the widget class must have pointers for all widgets that we want to modify from the code.
+*/
 extern "C" void button_di_clicked(GtkWidget *p_wdgt, gpointer p_data )
 {
   const char *a_cc_value;
@@ -385,6 +463,12 @@ extern "C" void button_di_clicked(GtkWidget *p_wdgt, gpointer p_data )
   gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
 }
 
+/*!
+ * \brief defines what happens when equals button gets clicked
+ * \param p_wdgt pointer to the builder structure
+ * \param p_data pointer to the builder data
+ * \details For this function to work, the widget class must have pointers for all widgets that we want to modify from the code.
+*/
 extern "C" void button_eq_clicked(GtkWidget *p_wdgt, gpointer p_data )
 {
   const char *a_cc_value;
@@ -420,7 +504,12 @@ extern "C" void button_eq_clicked(GtkWidget *p_wdgt, gpointer p_data )
 }
 
 
-
+/*!
+ * \brief defines what happens when button exit gets clicked
+ * \param p_wdgt pointer to the builder structure
+ * \param p_data pointer to the builder data
+ * \details For this function to work, the widget class must have pointers for all widgets that we want to modify from the code.
+*/
 extern "C" void button_exit_clicked(GtkWidget *p_wdgt, gpointer p_data )
 {
   gtk_main_quit();
