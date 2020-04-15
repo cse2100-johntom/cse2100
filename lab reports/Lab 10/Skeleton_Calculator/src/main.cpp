@@ -527,8 +527,8 @@ extern "C" void button_exit_clicked(GtkWidget *p_wdgt, gpointer p_data )
 int main(int argc, char **argv)
 {
 
-  GtkBuilder *builder;
-  GError *err = NULL;
+  GtkBuilder *builder; //!<pointer to build the GUI in main
+  GError *err = NULL; //!<ponter to determine error before attempting to build the GUI
 
   // Now we initialize GTK+
   gtk_init(&argc, &argv);
