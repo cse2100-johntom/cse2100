@@ -24,7 +24,10 @@ PROJECT_NAME           = "TeensyControl"
 
 ////////////////////////
 
+
+
 ////COMMENT SOURCE FILES////
+Comment functions and variables
 
 ////Stay in doc directory////
 
