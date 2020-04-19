@@ -1,11 +1,11 @@
 #include <gtk/gtk.h>
 #include <stdlib.h>
 #include <iostream>
-#define __STDC_FORMAT_MACROS
+#define __STDC_FORMAT_MACROS //!<Standard predefined macros
 
 
-#ifndef _MY__GLOBAL__H
-#define _MY__GLOBAL__H
+#ifndef _MY__GLOBAL__H //!<Macro for mysql 
+#define _MY__GLOBAL__H //!<Macro for mysql
 
 using namespace std;
 
@@ -43,6 +43,6 @@ extern Gui_Window_AppWidgets *gui_app; //!<GUI App pointer
 
 extern int operand; //!<operand to be submitted to calculator
 extern int last_function; //!<function that determines what form of calculation to use
-extern int clear_f; //!<determines whether an arithmetic operaation is being used
+extern int clear_f; //!<determines whether an arithmetic operation is being used
 
 #endif

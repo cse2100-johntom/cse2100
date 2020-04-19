@@ -6,7 +6,7 @@
  * \warning Improper use of this code may void your car's waranty
  * \copyright GNU Public License
  * \mainpage The Calculator
- * \secion intro_sec Introduction
+ * \section intro_sec Introduction
  * This code was developed to torture students.
  * \section compile_sec Compilation
  * Enter your main dir and type Cmake to create your make file. Now go to your build dir and type make to create your make file.
@@ -471,8 +471,8 @@ extern "C" void button_di_clicked(GtkWidget *p_wdgt, gpointer p_data )
 */
 extern "C" void button_eq_clicked(GtkWidget *p_wdgt, gpointer p_data )
 {
-  const char *a_cc_value;
-  char c_cc_value[20];
+  const char *a_cc_value; 
+  char c_cc_value[20]; 
   double a_d_value;
   a_cc_value = gtk_label_get_text(GTK_LABEL(gui_app->label_result));
   a_d_value = atoi(a_cc_value);
@@ -523,12 +523,17 @@ extern "C" void button_exit_clicked(GtkWidget *p_wdgt, gpointer p_data )
 //
 //********************************************************************
 //********************************************************************
-
+/*!
+ * \brief Main function to run program
+ * \param argc int used to indicate the index of commands typed on command line
+ * \param argv pointer for strings used on the command line
+ * \details This function is built using Gtk+ for all GUI elements.
+*/
 int main(int argc, char **argv)
 {
 
-  GtkBuilder *builder; //!<pointer to build the GUI in main
-  GError *err = NULL; //!<ponter to determine error before attempting to build the GUI
+  GtkBuilder *builder; 
+  GError *err = NULL; 
 
   // Now we initialize GTK+
   gtk_init(&argc, &argv);
